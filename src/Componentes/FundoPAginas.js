@@ -12,10 +12,8 @@ export const FundoPaginas = ({ children }) => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            color: '#fff', // Cor do texto sobre a imagem
-            textAlign: 'center', // Centralize o texto
             opacity: 0.9,
-            position: 'relative', // Adicionando posição relativa
+            position: 'relative',
         }}>
             {children}
         </div>

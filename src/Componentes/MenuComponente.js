@@ -12,6 +12,7 @@ export default function MenuComponente() {
     const createHandleMenuClick = (menuItem) => {
         return () => {
             console.log(`Clicked on ${menuItem}`);
+            window.location.href = `/${menuItem}/`;
         };
     };
 
@@ -20,8 +21,7 @@ export default function MenuComponente() {
             <MenuButton>Menu</MenuButton>
             <Menu slots={{ listbox: AnimatedListbox }}>
                 <MenuItem onClick={createHandleMenuClick('home')}>Home</MenuItem>
-                <MenuItem onClick={createHandleMenuClick('quemSomos')}>
-                Quem Somos
+                <MenuItem onClick={createHandleMenuClick('quemSomos')}>Quem Somos
                 </MenuItem>
                 <MenuItem onClick={createHandleMenuClick('galeria')}>Galeria</MenuItem>
                 <MenuItem onClick={createHandleMenuClick('contato')}>Contato</MenuItem>
@@ -67,7 +67,7 @@ const Listbox = styled('ul')(
   border-radius: 12px;
   overflow: auto;
   outline: 0px;
-  margin-left: 225px;
+  margin-left: auto;
   background: ${theme.palette.mode === 'dark' ? grey[900] : '#fff'};
   border: 1px solid ${theme.palette.mode === 'dark' ? grey[700] : grey[200]};
   color: ${theme.palette.mode === 'dark' ? grey[300] : grey[900]};

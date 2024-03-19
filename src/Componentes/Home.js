@@ -16,11 +16,11 @@ export const Home = () => {
   return (
     <div>
       <FundoPaginas>
-        <Card className='card-home'>
-          <div>
+        <Card className='card-principal'>
+          <div className='div-card'>
             <MenuConponente menuItems={menuItems} />
           </div>
-
+          <h1>Home</h1>
         </Card>
       </FundoPaginas>
 
